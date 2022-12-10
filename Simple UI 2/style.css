@@ -1,0 +1,226 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --bgcolor : linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+    
+}
+body{
+    /* linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)) , */
+   background:  url(../css4/Images/b9.jpg);
+background-size: cover;  /* background: var(--bgcolor); */
+}
+.containerHeader{
+    /* display: flexbox; */
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+}
+/*/////////////////////////// navigation baar  ////////////////////////////*/
+
+
+.logomain{
+    cursor: pointer;
+    color: white;
+margin-left: 110px;
+
+}
+.navBar ul li{
+
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    font-size: 18px;
+}
+
+
+
+.navBar{
+    flex: 1;
+    text-align: right;
+    margin-right: 89px;
+    margin-top: -47px;
+
+}
+  .navpos li a{
+      font-size: 18px;
+      color: white;
+text-decoration: none;
+transition: 0.3s;
+
+    
+
+} 
+.navposh:hover{
+    cursor: pointer;
+    /* color: #ffef0b; */
+    color: #33ccff;
+
+}
+.navposh::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color:#33ccff;
+    /* background-color:#ffef0b; */
+
+    transition: width 0.3;
+
+}
+/* navpos li a */
+.navposh:hover:after{
+    width: 100%;
+    transition: width 0.5s;
+
+}
+/*///////////////////searchBar design//////////*/
+.SearchBox a:hover{
+    text-decoration: none;
+}
+.SearchBox{
+    
+    margin-top: -5px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.searchtext{
+    width: 0rem;
+    height: 40px;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    transition: all 0.2s linear;
+}
+.searchtext:focus{
+    outline: none;
+}
+.Searchbtn{
+    width: 35px;
+    height: 35px;
+    background-color: #192a56;
+    color: #fff;
+    position: absolute;
+    right: 1rem;
+    display: grid;
+    place-items: center;
+    margin-right: -16px;
+    border-radius: 50%;
+    /* youtube.com/watch?v=zwdRDZfrFT0 */
+
+}
+.SearchBox:hover > .searchtext{
+    width: 20rem;
+    padding-left: 14px;
+
+}
+/* .SearchBox:hover > */
+
+/*///////////////////searchBar design//////////*/
+
+ /* .navpos :hover {
+     cursor: pointer;
+    color:#33ccff ;
+    background-color: white;
+    margin-top: -2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    border: 2px solid white;
+    
+
+} */
+
+/* .navBar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    font-size: 18px;
+    /* design 
+    color:white ;
+    background-color: transparent;
+    padding-left: 5px;
+    padding-right: 5px; 
+    border-radius: 10px;
+    border: 2px solid white;
+} */
+
+
+/* ///////////////////////////-------Body //////////////////////////////// */
+.sectionBody1{
+    display: flexbox;
+    margin-top: 130px;
+    align-items: center;
+
+}
+.sectionBody1{
+    color: white;
+}
+/* .sectionBody1 div{
+ align-items: center;
+
+} */
+.Welcome{
+    font-size: 34px;
+    font-family:  sans-serif;
+}
+.Introweb{
+    height: 13rem;
+    width: 45rem;
+   
+   display: flex;
+    
+    /* flex-direction: row; */
+    
+    justify-content: center;
+    align-items: center;
+    /* background: coral; */
+}
+.introdescription{
+    margin-top: 1rem;
+    font-family: cursive;
+   
+    font-size: 1.8rem;
+}
+.imagedescription{
+    height: 100%;
+    /* background: cornflowerblue; */
+    width: 20%;
+     text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    /* background: rgb(118, 131, 106); */
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    /* border-right: 0.3rem solid red; */
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: -ms-flexbox;
+
+    
+}
+.imagedescription img{
+    display: -ms-flexbox;
+    height: 14rem;
+    width: 14rem;
+    border:4px solid white;
+    border-radius: .4rem;
+  
+}
+
